@@ -2,7 +2,7 @@
 
 ENV['RACK_ENV'] = 'test'
 
-require File.join(File.dirname(__FILE__), '../app.rb')
+require File.join(File.dirname(__FILE__), '..', 'app.rb')
 
 require 'capybara'
 require 'capybara/rspec'
@@ -17,7 +17,6 @@ RSpec.configure do |config|
   end
 
   config.mock_with :rspec do |mocks|
-
     mocks.verify_partial_doubles = true
   end
 end

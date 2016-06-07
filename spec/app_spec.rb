@@ -1,6 +1,6 @@
-require 'sinatra'
-require 'spec_helper'
 
+require 'spec_helper'
+require 'sinatra'
 
 feature 'Enter names' do
   it "shows names on webpage" do
